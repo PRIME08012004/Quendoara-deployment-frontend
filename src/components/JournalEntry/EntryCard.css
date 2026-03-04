@@ -1,0 +1,271 @@
+.entry-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.entry-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.entry-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+  flex: 1;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 8px 12px;
+  border: none;
+  background: #f7fafc;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #e2e8f0;
+}
+
+/* Fancy Unlock Button */
+.btn-unlock-fancy {
+  background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 50%, #FFA500 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 140, 66, 0.4);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.btn-unlock-fancy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 140, 66, 0.6);
+  background: linear-gradient(135deg, #FF9C52 0%, #FF7B45 50%, #FFB520 100%);
+}
+
+.btn-unlock-fancy:active {
+  transform: translateY(0);
+}
+
+.unlock-icon {
+  font-size: 1.2rem;
+  animation: shake 1s ease-in-out infinite;
+}
+
+.unlock-text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(255, 140, 66, 0.6);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.lock-btn {
+  background: #c6f6d5;
+  border: 1px solid #9ae6b4;
+}
+
+.lock-btn:hover {
+  background: #9ae6b4;
+  border-color: #48bb78;
+}
+
+.delete-btn:hover {
+  background: #fed7d7;
+}
+
+.edit-btn {
+  background: #fff5e6;
+  color: #FF8C42;
+}
+
+.edit-btn:hover {
+  background: #ffe8cc;
+}
+
+.unlock-form {
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.unlock-form .form-group {
+  margin: 0;
+}
+
+.unlock-form .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.unlock-form .form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.unlock-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.entry-content {
+  margin-bottom: 16px;
+}
+
+.entry-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.encrypted-preview {
+  text-align: center;
+  padding: 32px;
+  background: #f7fafc;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+}
+
+.encrypted-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a5568;
+  margin: 0 0 16px 0;
+}
+
+.encrypted-hash {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.encrypted-hash code {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #718096;
+  word-break: break-all;
+}
+
+.hint-text {
+  font-size: 13px;
+  color: #718096;
+  margin: 0;
+}
+
+.entry-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.entry-date {
+  font-size: 13px;
+  color: #718096;
+}
+
+.encryption-badge,
+.unlocked-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.encryption-badge {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.unlocked-badge {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+@media (max-width: 1024px) {
+  .entry-header { flex-direction: column; gap: 12px; }
+  .entry-title { font-size: 1.2rem; }
+}
+
+@media (max-width: 768px) {
+  .entry-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .entry-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .unlock-actions {
+    flex-direction: column;
+  }
+  
+  .unlock-actions .btn {
+    width: 100%;
+  }
+}
+
